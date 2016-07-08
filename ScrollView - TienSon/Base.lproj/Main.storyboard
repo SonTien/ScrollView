@@ -1,45 +1,165 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5uH-GO-efg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--List Images-->
+        <scene sceneID="yOR-Yi-UFj">
+            <objects>
+                <viewController id="25c-6e-6Nc" customClass="ListImages" customModule="ScrollView___TienSon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sQb-eA-cAB"/>
+                        <viewControllerLayoutGuide type="bottom" id="5fA-EE-HSy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2qo-MK-Hp6" customClass="L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu3-8U-5tP">
+                                <rect key="frame" x="157" y="389" width="287" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="1Pq-P7-CNF"/>
+                                    <constraint firstAttribute="width" constant="287" id="gBB-DA-Ur1"/>
+                                </constraints>
+                                <state key="normal" image="droid1.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="25c-6e-6Nc" eventType="touchUpInside" id="DJ3-m9-Zzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkC-gC-tHx">
+                                <rect key="frame" x="157" y="87" width="287" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="2Wl-gE-Zer"/>
+                                    <constraint firstAttribute="height" constant="143" id="A0e-jk-Vxe"/>
+                                </constraints>
+                                <state key="normal" image="light.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="25c-6e-6Nc" eventType="touchUpInside" id="M1o-EH-kd6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hs-wt-hgw">
+                                <rect key="frame" x="157" y="238" width="287" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="Ycq-ol-NfI"/>
+                                    <constraint firstAttribute="height" constant="143" id="aqL-9O-os0"/>
+                                </constraints>
+                                <state key="normal" image="dark1.jpg"/>
+                                <connections>
+                                    <action selector="onTouch:" destination="25c-6e-6Nc" eventType="touchUpInside" id="2LR-K0-Bac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="lkC-gC-tHx" firstAttribute="top" secondItem="sQb-eA-cAB" secondAttribute="bottom" constant="23" id="e8L-b8-Owb"/>
+                            <constraint firstItem="xu3-8U-5tP" firstAttribute="centerX" secondItem="2qo-MK-Hp6" secondAttribute="centerX" id="eW4-5u-tjA"/>
+                            <constraint firstItem="7Hs-wt-hgw" firstAttribute="top" secondItem="lkC-gC-tHx" secondAttribute="bottom" constant="8" id="gvs-jy-qqq"/>
+                            <constraint firstItem="xu3-8U-5tP" firstAttribute="top" secondItem="7Hs-wt-hgw" secondAttribute="bottom" constant="8" id="nOA-7G-ySi"/>
+                            <constraint firstItem="7Hs-wt-hgw" firstAttribute="centerX" secondItem="2qo-MK-Hp6" secondAttribute="centerX" id="rdf-bf-1oO"/>
+                            <constraint firstItem="lkC-gC-tHx" firstAttribute="centerX" secondItem="2qo-MK-Hp6" secondAttribute="centerX" id="uv0-KE-Zid"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3GW-Ib-Bsa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kr1-I5-QSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="-120"/>
+        </scene>
         <!--View Scroll-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewScroll" customModule="ScrollView___TienSon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewScroll" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewScroll" customModule="ScrollView___TienSon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="JZj-66-Det"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ep-qv-gj8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-4C-XhG">
-                                <rect key="frame" x="20" y="28" width="560" height="495"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-4C-XhG">
+                                <rect key="frame" x="20" y="44" width="560" height="463"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Dh0-7w-gjd"/>
                                 </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" defersCurrentPageDisplay="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qn2-Oz-lCZ">
+                                <rect key="frame" x="20" y="506" width="560" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.18895924791029473" blue="0.5905563737664451" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.92527089746240687" blue="0.59406409831594609" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="deh-0X-Mvo"/>
+                                </connections>
+                            </pageControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-qF-hHq">
+                                <rect key="frame" x="125" y="562" width="350" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.92527089750000002" blue="0.59406409829999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="0.18895924789999999" blue="0.59055637380000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="zoomSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jlp-64-E1n"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8Y-OY-3oZ">
+                                <rect key="frame" x="520" y="520" width="60" height="60"/>
+                                <state key="normal" image="rightButton.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtW-AK-uyA">
+                                <rect key="frame" x="20" y="520" width="60" height="60"/>
+                                <state key="normal" image="leftButton.png"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LX6-4C-XhG" secondAttribute="bottom" constant="77" id="8qD-Um-T8D"/>
-                            <constraint firstItem="LX6-4C-XhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gsf-rF-3sa"/>
-                            <constraint firstItem="LX6-4C-XhG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="SEe-U3-bfb"/>
-                            <constraint firstItem="LX6-4C-XhG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nEg-cg-kU5"/>
+                            <constraint firstItem="LX6-4C-XhG" firstAttribute="leading" secondItem="qn2-Oz-lCZ" secondAttribute="leading" id="2iE-km-vnv"/>
+                            <constraint firstItem="2Ep-qv-gj8" firstAttribute="top" secondItem="c7g-qF-hHq" secondAttribute="bottom" constant="8" id="4wm-eG-Whg"/>
+                            <constraint firstItem="qn2-Oz-lCZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ArA-W7-kDd"/>
+                            <constraint firstItem="c7g-qF-hHq" firstAttribute="top" secondItem="qn2-Oz-lCZ" secondAttribute="bottom" constant="19" id="N5l-Bx-WJ0"/>
+                            <constraint firstItem="qn2-Oz-lCZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Nq3-71-jh9"/>
+                            <constraint firstItem="LX6-4C-XhG" firstAttribute="top" secondItem="JZj-66-Det" secondAttribute="bottom" constant="24" id="P9E-82-nlq"/>
+                            <constraint firstItem="c7g-qF-hHq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="VYL-Jb-4Wa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c7g-qF-hHq" secondAttribute="trailing" constant="107" id="kPx-GV-ohE"/>
+                            <constraint firstItem="LX6-4C-XhG" firstAttribute="trailing" secondItem="qn2-Oz-lCZ" secondAttribute="trailing" id="uIb-db-hfM"/>
+                            <constraint firstItem="qn2-Oz-lCZ" firstAttribute="top" secondItem="LX6-4C-XhG" secondAttribute="bottom" constant="-1" id="yYw-Zg-cGv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="change" destination="qn2-Oz-lCZ" id="1kG-3h-llU"/>
+                        <outlet property="pageControl" destination="qn2-Oz-lCZ" id="zco-gf-fwB"/>
                         <outlet property="scrollView" destination="LX6-4C-XhG" id="tcx-90-z5V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="418"/>
+            <point key="canvasLocation" x="797" y="-78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="obs-pI-dEL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5uH-GO-efg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VKi-jM-Fyo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="25c-6e-6Nc" kind="relationship" relationship="rootViewController" id="Qt8-Mg-mRG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0q-Pg-mCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dark1.jpg" width="759" height="500"/>
+        <image name="droid1.jpg" width="768" height="432"/>
+        <image name="leftButton.png" width="256" height="256"/>
+        <image name="light.jpg" width="900" height="470"/>
+        <image name="rightButton.png" width="256" height="256"/>
+    </resources>
 </document>
